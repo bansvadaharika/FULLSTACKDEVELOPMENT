@@ -1,0 +1,12 @@
+document.title="NEW dom file";
+document.getElementById("Head1").innerHTML="WELCOME TO OUR COLLEGE";
+document.getElementById("Head1");
+document.getElementById("para1").style.color="black";
+document.body.style.backgroundColor="lightpink";
+document.getElementById("para1").innerHTML="Branchs";
+document.getElementsByTagName("h1")[1].style.color="black";
+document.getElementsByClassName("ds")[0].style.color="green";
+document.getElementsByClassName("ds")[1].style.color="purple";
+document.getElementsByClassName("ds")[2].style.color="voilet";
+document.getElementsByClassName("ds")[3].style.color="red";
+document.getElementsByClassName("ds")[4].style.color="brown";
