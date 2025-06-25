@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+     <form>
+        <fieldset>
+            <center><h1>CLASS DETAILS</h1></center>
+            <label for="name">Enter your full name:</label>
+            <input type="text" id="name" required/>
+            <br>
+            <label for="rollno">Enter your rollno:</label>
+            <input type="rollno" id="rollno" required/>
+            <br>
+            <label for="branch">Enter your branch:</label>
+            <input type="branch" id="branch" required/>
+            <br>
+            <label for="section">Enter your section:</label>
+            <input type="section" id="section" required/>
+            <br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}"required/>
+            <br>
+            <label >Enter your gender:</label>
+            <br>
+            <div class="gender-group">
+            <input type="radio" name="gender" value="male" id="male" required/>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" required/>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="others" id="others" required/>
+            <label for="others">Others</label>
+           </div>
+            <label for="dob">Enter your Date of Birth</label>
+            <input type="date" id="dob" required/>
+            <br>
+            <label for="address">Enter your Address</label>
+            <textarea id = "address" name="address" ></textarea>
+            <br>
+           <center> <input type="submit" value="submit"></center>
+</body>
+</html>

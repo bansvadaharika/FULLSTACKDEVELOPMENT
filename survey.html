@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 2rem;
+    }
+    #title {
+      color: #333;
+    }
+    #survey-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      box-sizing: border-box;
+    }
+    .radio-group, .checkbox-group {
+      margin-top: 1rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      background-color: #28a745;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">freeCodeCamp Survey</h1>
+  <p id="description">We value your feedback! Please fill out this short survey to help us improve your experience.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label id="number-label" for="number">Age</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100">
+
+    <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+    <select id="dropdown" required>
+      <option value="" disabled selected>Select an option</option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="opensource">Open Source</option>
+    </select>
+
+    <div class="radio-group">
+      <p>How likely are you to recommend freeCodeCamp to a friend?</p>
+      <label><input type="radio" name="recommend" value="definitely"> Definitely</label>
+      <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+      <label><input type="radio" name="recommend" value="not-sure"> Not Sure</label>
+    </div>
+
+    <div class="checkbox-group">
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <label><input type="checkbox" name="improve" value="frontend"> Front-end Projects</label>
+      <label><input type="checkbox" name="improve" value="backend"> Back-end Projects</label>
+      <label><input type="checkbox" name="improve" value="data-viz"> Data Visualization</label>
+      <label><input type="checkbox" name="improve" value="challenges"> Challenges</label>
+    </div>
+
+    <label for="comments">Any additional comments?</label>
+    <textarea id="comments" rows="4" placeholder="Your feedback..."></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+</body>
+</html>
