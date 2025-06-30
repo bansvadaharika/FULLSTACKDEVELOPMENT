@@ -1,0 +1,37 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-image: url("back2.jpeg");
+      background-size:  cover;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      color: darkred;
+      background-color: #2ecc5b;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      color: darkred;
+      background-color: #2ecc5b;
+      margin-left: 10px;
+    }
