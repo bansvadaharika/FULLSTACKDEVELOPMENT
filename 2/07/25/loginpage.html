@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mens Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    h2 {
+      color: #f04e30; 
+      margin-bottom: 20px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      background-color: #f04e30;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #d8431a;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Ajio Login</h2>
+    <form id="loginForm">
+      <input type="number" id="number" placeholder="Enter your number" required />
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <div class="error" id="error"></div>
+    </form>
+  <a href="ajio.html" class="btn">Login</a>
+
+</form>
+
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const errorDiv = document.getElementById('error');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const number = document.getElementById('number').value.trim();
+      const name = document.getElementById('name').value.trim();
+
+      if (number === '9390190087' || name === 'jerry') {
+        
+        return;
+      }
+
+      if (!/^\d{10}$/.test(number)) {
+        errorDiv.textContent = 'Please enter a valid 9-digit number.';
+        return;
+      }
+    });
+  </script>
+
+
+
+
+</body>
+</html>
