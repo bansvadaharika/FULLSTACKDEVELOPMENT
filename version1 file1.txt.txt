@@ -1,4 +1,18 @@
-file1.txt1
+#js concepts
+Syntax
+ variables 
+data types 
+operators 
+ operators
+ Control statements 
+Event listeners 
+keyboard listeners
+ mouse listeners
+internal JS 
+external JS
+Building forms using JS
+Building websites using JS 
+Callback functionsfile1.txt1
 file1.txt2
 file1.txt3
 python
