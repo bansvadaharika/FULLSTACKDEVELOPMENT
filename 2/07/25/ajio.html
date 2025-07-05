@@ -5,25 +5,44 @@
   <title>AJIO Clone</title>
   <link rel="stylesheet" href="ajio.css">
   <style>
+    .buy-now {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    .add-to-cart {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
   <center>
     <header>
-       <h1>AJIO</h1>
+      <h1>AJIO</h1>
       <div class="category-bar">
-  <div class="categories">
-    <div><a href="https://www.ajio.com/shop/men?srsltid=AfmBOorEuzwadedKAY4ioVFtxl6aXV3S_rA_AUdXBXBchQrg4_d0-DVC">MEN</a></div>
-    <div><a href="https://www.ajio.com/shop/women?srsltid=AfmBOoqO8jS4aoFLxCKw6TWmYncGfcJ0TOYh2Ofx3HRdzNuIaTgeEgnw">WOMEN</a></div>
-    <div><a href="https://www.ajio.com/shop/kids?srsltid=AfmBOopGosP5-S5E8CsE04ERIRHOOCNEk9IjWolM2Z7rk-hC6_huvFkl">KIDS</a></div>
-    <div><a href="https://www.nykaa.com/">BEAUTY</a></div>
-    <div><a href="https://www.thinkitchen.in/">HOME & KITCHEN</a></div>
-    <div class="search-container">
-      <input type="text" placeholder="Search AJIO">
-      <button>Search</button>
-    </div>
-  </div>
-</div>  
+        <div class="categories">
+          <div><a href="https://www.ajio.com/shop/men?srsltid=AfmBOorEuzwadedKAY4ioVFtxl6aXV3S_rA_AUdXBXBchQrg4_d0-DVC">MEN</a></div>
+          <div><a href="https://www.ajio.com/shop/women?srsltid=AfmBOoqO8jS4aoFLxCKw6TWmYncGfcJ0TOYh2Ofx3HRdzNuIaTgeEgnw">WOMEN</a></div>
+          <div><a href="https://www.ajio.com/shop/kids?srsltid=AfmBOopGosP5-S5E8CsE04ERIRHOOCNEk9IjWolM2Z7rk-hC6_huvFkl">KIDS</a></div>
+          <div><a href="https://www.nykaa.com/">BEAUTY</a></div>
+          <div><a href="https://www.thinkitchen.in/">HOME & KITCHEN</a></div>
+          <div class="search-container">
+            <input type="text" placeholder="Search AJIO">
+            <button>Search</button>
+          </div>
+        </div>
+      </div>  
     </header>
     <marquee class="scroll-images" behavior="scroll" direction="left" scrollamount="15">
       <img src="https://www.bing.com/th/id/OIP.4DECPiErG8rFktSeUYxwoAAAAA?w=236&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Image 1" class="hover-img">
@@ -53,30 +72,70 @@
 
     <center><mark><h1>ETHNIC WOMEN WEAR</h1></mark>
       <div class="women">
-        <div><a href="#"><img src="https://th.bing.com/th/id/OIP.YwhKjEHgypKu9K_b8fFlewHaKk?w=198&h=283&c=7&r=0&o=5&dpr=1.3&pid=1.7"></a>
-            <button>400$</button> </div>
-        <div><a href="#"><img src="https://th.bing.com/th/id/OIP.1u0k1R3iXLRDT7gcRKDwWQHaLG?w=198&h=297&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img"></a>
-          <button>200$</button></div>
-        <div><a href="#"><img src="https://th.bing.com/th/id/OIP.7XroQJsGFB1cIc3y2CoLeAHaKk?w=198&h=282&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img"></a>
-          <button>359$</button></div>
-<div><a href="#"><img src="https://www.bing.com/th?id=OPAC.AqDkemvghKU%2FWg474C474&o=5&pid=21.1&h=160&rs=1&qlt=100&dpr=1.3&o=2&pcl=f5f5f5&w=167" class="hover-img"></a>
-          <button>999$</button></div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.YwhKjEHgypKu9K_b8fFlewHaKk?w=198&h=283&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+          <p>Price: $400</p>
+          <button class="buy-now" data-name="Women's Ethnic Wear 1" data-price="400">Buy Now</button>
+          <button class="add-to-cart" data-name="Women's Ethnic Wear 1" data-price="400">Add to Cart</button>
+        </div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.1u0k1R3iXLRDT7gcRKDwWQHaLG?w=198&h=297&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img">
+          <p>Price: $200</p>
+          <button class="buy-now" data-name="Women's Ethnic Wear 2" data-price="200">Buy Now</button>
+          <button class="add-to-cart" data-name="Women's Ethnic Wear 2" data-price="200">Add to Cart</button>
+        </div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.7XroQJsGFB1cIc3y2CoLeAHaKk?w=198&h=282&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img">
+          <p>Price: $359</p>
+          <button class="buy-now" data-name="Women's Ethnic Wear 3" data-price="359">Buy Now</button>
+          <button class="add-to-cart" data-name="Women's Ethnic Wear 3" data-price="359">Add to Cart</button>
+        </div>
+        <div>
+          <img src="https://www.bing.com/th?id=OPAC.AqDkemvghKU%2FWg474C474&o=5&pid=21.1&h=160&rs=1&qlt=100&dpr=1.3&o=2&pcl=f5f5f5&w=167" class="hover-img">
+          <p>Price: $999</p>
+          <button class="buy-now" data-name="Women's Ethnic Wear 4" data-price="999">Buy Now</button>
+          <button class="add-to-cart" data-name="Women's Ethnic Wear 4" data-price="999">Add to Cart</button>
+        </div>
       </div>
     </center>
 
     <center><h1>ETHNIC MEN WEAR</h1>
       <div class="men">
-        <div><a href="#"><img src="https://th.bing.com/th/id/OIP.dq4__AIpm3CvPlTQMdbEWgHaLH?w=198&h=297&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img"></a>
-          <button>151$</button> </div>
-        <div><a href="#"><img src="https://th.bing.com/th/id/OIP.3iMkq48LAHEsjdWsW8NTgwHaLG?w=198&h=296&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img"></a>
-          <button>120$</button></div>
-        <div><a href="#"><img src="https://th.bing.com/th/id/OIP.3VMmX9-sIlONMHeoVEjI3wHaI7?w=198&h=239&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img"></a>
-          <button>156$</button></div>
-          <div><a href="#"><img src="https://i.pinimg.com/originals/60/21/26/60212610b604d21fdc180444c6046302.jpg" class="hover-img"></a>
-          <button>156$</button></div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.dq4__AIpm3CvPlTQMdbEWgHaLH?w=198&h=297&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img">
+          <p>Price: $151</p>
+          <button class="buy-now" data-name="Men's Ethnic Wear 1" data-price="151">Buy Now</button>
+          <button class="add-to-cart" data-name="Men's Ethnic Wear 1" data-price="151">Add to Cart</button>
+        </div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.3iMkq48LAHEsjdWsW8NTgwHaLG?w=198&h=296&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img">
+          <p>Price: $120</p>
+          <button class="buy-now" data-name="Men's Ethnic Wear 2" data-price="120">Buy Now</button>
+          <button class="add-to-cart" data-name="Men's Ethnic Wear 2" data-price="120">Add to Cart</button>
+        </div>
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.3VMmX9-sIlONMHeoVEjI3wHaI7?w=198&h=239&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="hover-img">
+          <p>Price: $156</p>
+          <button class="buy-now" data-name="Men's Ethnic Wear 3" data-price="156">Buy Now</button>
+          <button class="add-to-cart" data-name="Men's Ethnic Wear 3" data-price="156">Add to Cart</button>
+        </div>
+        <div>
+          <img src="https://i.pinimg.com/originals/60/21/26/60212610b604d21fdc180444c6046302.jpg" class="hover-img">
+          <p>Price: $156</p>
+          <button class="buy-now" data-name="Men's Ethnic Wear 4" data-price="156">Buy Now</button>
+          <button class="add-to-cart" data-name="Men's Ethnic Wear 4" data-price="156">Add to Cart</button>
+        </div>
       </div>
     </center>
 
+    <button id="view-cart">View Cart</button>
+    <div class="cart" id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-list"></ul>
+      <p id="total"></p>
+<a href="checkout.html" class="btn">Checkout</a>
+    </div>
+   
     <footer>
       <p>&copy; 2025 AJIO for life. All rights reserved.
         maisammaguda.kompally.medchal.
@@ -88,5 +147,57 @@
       </nav>
     </footer>
   </center>
+
+  <script>
+    let cart = [];
+    const cartList = document.getElementById('cart-list');
+    const totalElement = document.getElementById('total');
+    const cartContainer = document.getElementById('cart');
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseInt(button.getAttribute('data-price'));
+        cart.push({ name, price });
+        updateCart();
+      });
+    });
+
+    document.querySelectorAll('.buy-now').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseInt(button.getAttribute('data-price'));
+        alert(`You have purchased ${name} for $${price}.`);
+      });
+    });
+
+    document.getElementById('view-cart').addEventListener('click', () => {
+      cartContainer.style.display = cartContainer.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.getElementById('checkout').addEventListener('click', () => {
+      alert('Checkout successful!');
+      cart = [];
+      updateCart();
+      cartContainer.style.display = 'none';
+    });
+
+    function updateCart() {
+      cartList.innerHTML = '';
+      let total = 0;
+      cart.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - $${item.price}`;
+        cartList.appendChild(listItem);
+        total += item.price;
+      });
+      totalElement.textContent = `Total: $${total}`;
+    }
+
+
+
+    
+  </script>
+  
 </body>
 </html>
