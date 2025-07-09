@@ -1,0 +1,36 @@
+/* Hello.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: burlywood;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color:green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: green;
+}
