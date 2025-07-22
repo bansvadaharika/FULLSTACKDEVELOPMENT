@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MEMORY Flip Card Game</title>
+  <link rel="stylesheet" href="memory.css" />
+</head>
+<body>
+  <h1><label>MEMORY FLIP CARD GAME</label></h1>
+
+  <div class="difficulty">
+    <label>MODE:</label>
+    <button onclick="setDifficulty('easy')">Easy</button>
+    <button onclick="setDifficulty('medium')">Medium</button>
+    <button onclick="setDifficulty('hard')">Hard</button>
+  </div>
+
+  <div class="label">
+    <label>Moves: <label id="moves">0</label></label>
+    <br><br>
+    <label>Time Left: <span id="timer">60</label>s</label>
+    
+  </div>
+<br>
+  <div class="game-board" id="gameBoard"></div>
+
+  <div id="result" class="modal hidden">
+    <div class="modal-content">
+      <h2>Game Over!</h2>
+      <p id="finalStats"></p>
+      <div id="stars"></div>
+      <h3>Leaderboard</h3>
+      <ol id="leaderboard"></ol>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="memory.js"></script>
+</body>
+</html>
